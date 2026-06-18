@@ -1,0 +1,14 @@
+# configs/engine_config.yaml
+camera:
+  source: 0 # Index for local webcam, or use an "rtsp://..." string
+  resolution: [640, 480]
+  fps_target: 30
+
+model:
+  weights: "yolo11n-pose.pt" # Light nano version optimized for edge deployment
+  confidence_threshold: 0.5
+  device: "cpu" # Switch to "cuda" or "mps" if hardware acceleration is available
+
+kinematics:
+  temporal_window_size: 15 # Number of historical frames to track for velocity
+  angle_smoothing_alpha: 0.3 # EMA smoothing factor for raw joint fluctuations

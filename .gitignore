@@ -1,0 +1,17 @@
+# Python environment and cache
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Project specific
+configs/local_settings.yaml
+*.pt
+*.pth
+
+# OS files
+.DS_Store
+.vscode/
+.idea/
