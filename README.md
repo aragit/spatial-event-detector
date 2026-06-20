@@ -81,11 +81,11 @@ spatial-event-detector/
 ```
 
 **Roadmap**
- [ ] Right arm tracking (mirror keypoint indices)
- [ ]Bilateral tracking (both arms simultaneously)
- [ ]Configurable threshold angles
- [ ]Rep log export (CSV / JSON)
- [ ]TensorRT backend for Jetson deployment
+-  [ ] Right arm tracking (mirror keypoint indices)
+-  [ ] Bilateral tracking (both arms simultaneously)
+-  [ ] Configurable threshold angles
+-  [ ] Rep log export (CSV / JSON)
+-  [ ] TensorRT backend for Jetson deployment
 
   *Built for rehabilitation monitoring. Designed for edge deployment.*
 
