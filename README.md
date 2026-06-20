@@ -51,20 +51,20 @@ kinematics:
   temporal_window_size: 15          # Frames for velocity tracking
   angle_smoothing_alpha: 0.3        # EMA smoothing factor
 ```
-**How It Works**
+## How It Works
 1. Each frame runs through YOLO11-Pose to extract 17 COCO keypoints
 2. The left arm chain (shoulder-5 → elbow-7 → wrist-9) is isolated
 3. KinematicTelemetryEngine.calculate_joint_angle() computes the interior elbow angle
 4. SpatialEventStateMachine transitions between EXTENSION and FLEXION at 90°/160° thresholds
 5. Each full cycle increments the event counter; display updates in real time
 
-**Use Cases**
+## Use Cases
 
 - Rehabilitation — Track range-of-motion progress for post-stroke or post-surgery patients
 - Fitness — Count curls / triceps extensions with no wearable
 - Ergonomics — Monitor repetitive strain patterns
 
-**Repository Structure**
+## Repository Structure
 ```text
 spatial-event-detector/
 ├── main.py                          # Entry point + display loop
